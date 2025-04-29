@@ -1,0 +1,6 @@
+path: /kaggle/input/local-water-waste/dataset
+train: images/train
+val:   images/val
+
+nc: 1
+names: ['garbage']
