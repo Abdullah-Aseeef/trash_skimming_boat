@@ -6,7 +6,7 @@ import time
 from ultralytics import YOLO
 import torch
 
-JETSON_IP = '192.168.1.26'  
+JETSON_IP = '172.20.10.3'  
 JETSON_PORT = 8000            
 COMMAND_PORT = 9000           
 CONF_THRESH = 0.2 # Will change on actual deployment       
