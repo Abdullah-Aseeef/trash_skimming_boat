@@ -2,10 +2,18 @@ import socket
 import cv2
 import numpy as np
 import struct
+import serial
+import time
 
-CAMERA_IP = 'laptop_ip' 
+CAMERA_IP = '192.168.1.21' 
 CAMERA_PORT = 8000            
 COMMAND_PORT = 9000           
+
+arduino_port = '/dev/ttyACM0'  # Adjust if necessary (check your system using `ls /dev/tty*`)
+baud_rate = 9600
+
+ser = serial.Serial(arduino_port, baud_rate)
+print(f"Connected to Arduino Mega at {arduino_port}")
 
 # CSI Camera Setup - Can change resolution to improve latency
 gst_str = ("nvarguscamerasrc ! "
@@ -56,16 +64,16 @@ while True:
 
         if command == "move forward":
             print("Moving boat forward...")
-            # Will put logic for actual arduino to accept serial commands here
+            ser.write('F'.encode('utf-8'))
         elif command == "turn left":
             print("Turning boat left...")
-            # Will put logic for actual arduino to accept serial commands here
+            ser.write('L'.encode('utf-8'))
         elif command == "turn right":
             print("Turning boat right...")
-            # Will put logic for actual arduino to accept serial commands here
+            ser.write('R'.encode('utf-8'))
         else:
             print("Unknown command.")
-
+    time.sleep(1)
     # may need sleep here too to ensure the boat actually moves before sending the next frame
 
 cap.release()
