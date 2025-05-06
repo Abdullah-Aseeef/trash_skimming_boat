@@ -59,10 +59,10 @@ To detect and classify floating trash in water bodies using YOLO-based object de
 
 | Metric    | Baseline YOLO |
 | --------- | ------------- |
-| Accuracy  | 30.4%         |
-| Precision | 57.6%         |
-| Recall    | 39.1%         |
-| F1 Score  | 46.6%         |
+| Accuracy  | 77.96%        |
+| Precision | 87.48%        |
+| Recall    | 87.75%        |
+| F1 Score  | 87.62%        |
 
 ### Challenges Identified
 
