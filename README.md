@@ -90,7 +90,7 @@ To detect and classify floating trash in water bodies using YOLO-based object de
 
 ## 📥 Dataset Download
 
-You can download the full annotated dataset (3,798 images in Pascal VOC format across 19 trash classes) from our [Google Drive folder](https://drive.google.com/drive/folders/1ZbxAAX6zW6dkYCFI0oDsz_aC7dxq5Ohy?usp=share_link).
+You can download the full annotated dataset (3,798 images in Pascal VOC format across 19 trash classes) from our [OneDrive folder](https://pern-my.sharepoint.com/:f:/g/personal/26100192_lums_edu_pk/Eh6KSecwmLRNsO6KOScjWSYB34LuJp4PC5RlNKSnwM3yGw?e=TUbEWO).
 
 ---
 
